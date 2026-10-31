@@ -312,7 +312,7 @@ This section helps you put everything together into one plan you can actually fo
 
 Print the next two pages, fill them in by hand, and keep them with your important papers. This is your emergency reference if something goes wrong.
 
-[View and print the backup plan](printable-backup-plan.html)
+[View and print the backup plan](printable-backup-plan.md) (Markdown) or [open the HTML printable form](../site/printable-backup-plan.html)
 
 ---
 

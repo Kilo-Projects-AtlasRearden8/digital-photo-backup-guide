@@ -1,20 +1,25 @@
+
 # .gitignore
-# OS
-.DS_Store
-Thumbs.db
-
-# IDE / editor
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
 # Build / output
-*.pdf
-site/_site/
-dist/
-build/
-
+# IDE / editor
 # Logs
+# OS
 *.log
+*.pdf
+*.pyc
+*.swo
+*.swp
+*~
+.DS_Store
+.env
+.env.*
+.idea/
+.venv/
+.vscode/
+Thumbs.db
+__pycache__/
+build/
+dist/
+dist/*.tmp
+node_modules/
+site/_site/

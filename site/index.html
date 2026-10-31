@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Photo Backup Handbook — Asdale Dynamics, LLC</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <a href="#" class="logo">Photo Backup Handbook</a>
+    <a href="printable-backup-plan.html" class="btn print-btn">Printable Plan</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>The Photo Backup Handbook</h1>
+    <p class="subtitle">A beginner-friendly guide to backing up digital photos safely — local copies, external drives, cloud options, file naming, and duplicate handling. Privacy-first, step by step, printable.</p>
+    <p class="credit">Published by <strong>Asdale Dynamics, LLC</strong></p>
+    <a href="#contents" class="btn primary">Start reading</a>
+    <a href="printable-backup-plan.html" class="btn secondary">Printable backup plan</a>
+  </div>
+</header>
+
+<main id="contents">
+  <section id="intro">
+    <h2>About this guide</h2>
+    <p>Photos are memories. Losing them hurts. This handbook walks you through backing up your digital photos safely, using plain English and clear steps. No condescension, no jargon without explanation, and no secrets or personal data required.</p>
+    <p>This guide is designed for beginners. If you can copy a file from one folder to another, you can follow it.</p>
+  </section>
+
+  <section id="rule-321">
+    <h2>The 3-2-1 backup rule</h2>
+    <p>The most important rule in photo backup is called <strong>3-2-1</strong>:</p>
+    <table>
+      <thead><tr><th>Number</th><th>Meaning</th><th>What it looks like for photos</th></tr></thead>
+      <tbody>
+        <tr><td><strong>3</strong></td><td>Keep <strong>3</strong> copies of every photo</td><td>One on your phone/camera, one on your computer, one on an external drive</td></tr>
+        <tr><td><strong>2</strong></td><td>Store them on <strong>2</strong> different media types</td><td>Your computer's internal drive + an external USB drive (or cloud)</td></tr>
+        <tr><td><strong>1</strong></td><td>Keep <strong>1</strong> copy off-site</td><td>A backup stored somewhere other than your home (cloud or a drive kept elsewhere)</td></tr>
+      </tbody>
+    </table>
+    <p class="callout"><strong>Why it matters:</strong> If your phone dies, you have the computer copy. If your computer dies, you have the external drive. If your house has a fire or flood, you have the off-site copy. One failure won't lose your photos.</p>
+  </section>
+
+  <section id="local-copies">
+    <h2>Step 1: Local copies on your computer</h2>
+    <h3>What you need</h3>
+    <p>A computer (Windows, Mac, or Linux) and a folder to store your photos (your <strong>Photo Library</strong>).</p>
+    <h3>Choose a home for your photos</h3>
+    <p>Pick one main folder on your computer where all photos will live. Don't scatter photos across Downloads, Desktop, Documents, and random folders.</p>
+    <ul>
+      <li><strong>Windows:</strong> C:\Users\&lt;YourName&gt;\Pictures\Photo Library</li>
+      <li><strong>Mac:</strong> /Users/&lt;YourName&gt;/Pictures/Photo Library</li>
+      <li><strong>Linux:</strong> /home/&lt;YourName&gt;/Pictures/Photo Library</li>
+    </ul>
+    <h3>Create the folder structure</h3>
+    <pre><code>Photo Library/
+├── Incoming/          # New photos go here first
+├── Organized/         # Sorted by year and event
+├── Archives/          # Old photos you don't need often
+└── Duplicates/        # Suspected duplicates go here for review</code></pre>
+    <div class="callout"><strong>Important:</strong> Do not delete photos from your phone yet. Wait until you have at least two copies (see Step 2).</div>
+  </section>
+
+  <section id="external-drives">
+    <h2>Step 2: External drives</h2>
+    <p>An external drive protects you if your computer fails. It is also portable — you can take it to a friend's house or store it elsewhere for off-site safety.</p>
+    <h3>Buy the right drive</h3>
+    <ul>
+      <li><strong>HDD:</strong> Cheaper, more storage per dollar, good for long-term archives.</li>
+      <li><strong>SSD:</strong> Faster, no moving parts, more expensive, good if you carry it around a lot.</li>
+      <li><strong>Size:</strong> 1 TB holds roughly 250,000 phone photos. Start with 1–2 TB.</li>
+      <li><strong>Format:</strong> exFAT works on both Windows and Mac — the safest choice.</li>
+    </ul>
+    <h3>Copy your Photo Library</h3>
+    <ol>
+      <li>Plug in the external drive.</li>
+      <li>Copy the entire Photo Library folder to the drive.</li>
+      <li>Name the backup clearly, like <em>Photo Backup 2026-10</em>.</li>
+      <li>Verify a few photos open from the drive.</li>
+      <li>Safely eject before unplugging.</li>
+    </ol>
+    <div class="warning"><strong>Store safely:</strong> Keep the drive dry and away from heat and magnets. Keep a second drive at a different location for true off-site protection.</div>
+  </section>
+
+  <section id="cloud-options">
+    <h2>Step 3: Cloud backup options</h2>
+    <p>Cloud storage keeps your photos on someone else's servers, accessible from anywhere. It is convenient but has privacy trade-offs.</p>
+    <table>
+      <thead><tr><th>Feature</th><th>Why it matters</th></tr></thead>
+      <tbody>
+        <tr><td>Encryption at rest</td><td>Your photos are stored encrypted on the provider's servers</td></tr>
+        <tr><td>Encryption in transit</td><td>Your photos are encrypted while uploading/downloading</td></tr>
+        <tr><td>Zero-knowledge / private encryption</td><td>Only you hold the encryption key; the provider cannot see your photos</td></tr>
+        <tr><td>Automatic backup</td><td>Photos upload without you remembering to do it</td></tr>
+      </tbody>
+    </table>
+    <h3>Recommended privacy-first options</h3>
+    <ul>
+      <li><strong>Encrypted cloud storage (recommended):</strong> Tresorit, Sync.com, pCloud (with Crypto), or Proton Drive. You hold the key.</li>
+      <li><strong>Mainstream (convenient, less private):</strong> Google Photos, iCloud, Amazon Photos, OneDrive. The provider can access your photos.</li>
+      <li><strong>Self-hosted (most private, more technical):</strong> Nextcloud or Immich on your own hardware. Photos never leave your house.</li>
+    </ul>
+    <div class="callout"><strong>Save your recovery key:</strong> If you use encrypted cloud storage, print your recovery key and store it with your important papers. If you lose it, the provider cannot reset it — you lose your photos.</div>
+  </section>
+
+  <section id="file-naming">
+    <h2>Step 4: File naming and organization</h2>
+    <p>Good file names make photos easy to find years later. Names like <code>IMG_1234.jpg</code> are hard to search.</p>
+    <h3>Recommended naming format</h3>
+    <p><code>YYYY-MM-DD_EventName_Sequence.jpg</code></p>
+    <table>
+      <thead><tr><th>Example</th><th>Meaning</th></tr></thead>
+      <tbody>
+        <tr><td>2026-09-15_Wedding_001.jpg</td><td>Wedding, September 15, 2026, first photo</td></tr>
+        <tr><td>2026-07-04_BeachTrip_042.jpg</td><td>Beach trip, July 4, 2026, 42nd photo</td></tr>
+        <tr><td>2025-12-25_ChristmasMorning_007.jpg</td><td>Christmas morning, 2025, 7th photo</td></tr>
+      </tbody>
+    </table>
+    <h3>Folder organization by year</h3>
+    <pre><code>Photo Library/Organized/
+├── 2024/
+├── 2025/
+└── 2026/</code></pre>
+    <div class="callout"><strong>Tip:</strong> No spaces or special characters in file names — works on every system.</div>
+  </section>
+
+  <section id="duplicates">
+    <h2>Step 5: Finding and removing duplicates</h2>
+    <p>Duplicate photos waste space and make your library messy.</p>
+    <h3>Free tools</h3>
+    <ul>
+      <li><strong>Windows:</strong> Duplicate Cleaner Free</li>
+      <li><strong>Windows/Mac/Linux:</strong> dupeGuru (open source)</li>
+      <li><strong>Any:</strong> Sort by name/date in your file manager and review manually</li>
+    </ul>
+    <h3>Safety rules</h3>
+    <ul>
+      <li>Never delete the only copy of a photo.</li>
+      <li>Review before deleting — move to a "Duplicates" folder first.</li>
+      <li>Keep the highest quality version.</li>
+    </ul>
+  </section>
+
+  <section id="printable">
+    <h2>Printable backup plan</h2>
+    <p>Print the backup plan and keep it with your important papers. It is your emergency reference if something goes wrong.</p>
+    <a href="printable-backup-plan.html" class="btn primary">Open printable plan</a>
+  </section>
+
+  <section id="license">
+    <h2>License and credit</h2>
+    <p>This guide is published by <strong>Asdale Dynamics, LLC</strong>.</p>
+    <p>Licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+    <p>Copyright (c) 2026 Asdale Dynamics, LLC</p>
+  </section>
+</main>
+
+<footer>
+  <p>Plain English, step by step, never condescending. Like a friend would explain it.</p>
+  <p>&copy; 2026 Asdale Dynamics, LLC &bull; Licensed under the MIT License</p>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
